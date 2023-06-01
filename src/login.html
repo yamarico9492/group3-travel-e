@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>login-page</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./login style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>RYKOU-BOOKINGSYSTEM</h2>
+      <form id="login-form">
+        <div class="form-group">
+          <label for="first-name">姓氏　First-name:</label>
+          <input type="text" id="first-name" name="first-name" required />
+        </div>
+        <div class="form-group">
+          <label for="last-name">名　Last-name:</label>
+          <input type="text" id="last-name" name="last-name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">メール　Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">パスワード　Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <div class="form-group">
+          <label for="gender">性別　Gender:</label>
+          <select id="gender" name="gender">
+            <option value="male">男性　Male</option>
+            <option value="female">女性　Female</option>
+            <option value="other">別　Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="birthdate">生年月日　Birthdate:</label>
+          <input type="date" id="birthdate" name="birthdate" required />
+        </div>
+        <button type="submit">登録</button>
+      </form>
+    </div>
+    <script src="./login script.js"></script>
+  </body>
+</html>

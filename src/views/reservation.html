@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>東京旅行予約システム</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      #reservationForm {
+        width: 100%;
+        max-width: 500px;
+        padding: 20px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      #reservationForm label {
+        font-weight: bold;
+      }
+      #reservationForm input,
+      #reservationForm select {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="reservationForm">
+      <div class="form-group">
+        <label for="transportation">交通手段:</label><br />
+        <select id="transportation" name="transportation" class="form-control">
+          <option value="train">鉄道</option>
+          <option value="plane">飛行機</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="time">時間:</label><br />
+        <input type="time" id="time" name="time" class="form-control" />
+      </div>
+      <div class="form-group">
+        <label for="numOfPeople">人数:</label><br />
+        <input
+          type="number"
+          id="numOfPeople"
+          name="numOfPeople"
+          min="1"
+          class="form-control"
+        />
+      </div>
+      <div class="form-group">
+        <label for="seat">指定席:</label><br />
+        <input type="text" id="seat" name="seat" class="form-control" />
+      </div>
+      <div class="form-group">
+        <input type="submit" value="予約" class="btn btn-primary" />
+      </div>
+    </form>
+  </body>
+</html>
